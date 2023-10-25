@@ -44,7 +44,7 @@ public class BoundaryEmmenager {
 		}
 	}
 	private void emmenagerDruide(String nomVisiteur) {
-		System.out.println("Bienvenu druide " + nomVisiteur);
+		System.out.println("Bienvenue druide " + nomVisiteur);
 		StringBuilder question = new StringBuilder();
 		question.append("Quelle est votre force?\n");
 		forceDruide = Clavier.entrerEntier(question.toString());
