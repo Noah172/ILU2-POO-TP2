@@ -4,9 +4,6 @@ import controleur.ControlEmmenager;
 
 public class BoundaryEmmenager {
 	private ControlEmmenager controlEmmenager;
-	private int effetPotionMin;
-	private int effetPotionMax;
-	private int forceDruide;
 
 	public BoundaryEmmenager(ControlEmmenager controlEmmenager) {
 		this.controlEmmenager = controlEmmenager;
@@ -45,6 +42,9 @@ public class BoundaryEmmenager {
 		}
 	}
 	private void emmenagerDruide(String nomVisiteur) {
+		int forceDruide;
+		int effetPotionMin;
+		int effetPotionMax;
 		System.out.println("Bienvenue druide " + nomVisiteur);
 		StringBuilder question = new StringBuilder();
 		question.append("Quelle est votre force?\n");
